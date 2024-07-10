@@ -1,0 +1,48 @@
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
+
+font:
+  size: 13
+  bold:
+    family: "RobotoMono Nerd Font"
+    style: "Bold"
+  italic:
+    family: "RobotoMono Nerd Font"
+  normal:
+    family: "RobotoMono Nerd Font"
+    style: "Regular"
+  glyph_offset:
+    x: 0
+    y: 0
+  offset:
+    x: 0
+    y: 0
+
+colors:
+  primary:
+    background: '#0d0d1b'
+    foreground: '#ccccce'
+
+  cursor:
+    text: '#bbbbbb'
+    cursor: '#ff0017'
+
+  normal:
+    black: '#282828'
+    red: '#ca1444'
+    green: '#789aba'
+    yellow: '#b3879f'
+    blue: '#95569b'
+    magenta: '#cb6fa1'
+    cyan: '#fb6e93'
+    white: '#cf98c1'
+
+  bright:
+    black: '#98218e'
+    red: '#cb515d'
+    green: '#5a87b1'
+    yellow: '#9c61ab'
+    blue: '#9a77b1'
+    magenta: '#f2a297'
+    cyan: '#f4436f'
+    white: '#ebdbb2'

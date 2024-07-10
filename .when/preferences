@@ -1,0 +1,11 @@
+calendar = ~/.when/calendar
+editor = nvim
+wrap = 0
+filer_accents_on_output = false
+ampm = false
+calendar_today_style = "fggreen,bold"
+items_today_style = "fggreen,bold"
+monday_first = true
+future = 14
+past = -2
+

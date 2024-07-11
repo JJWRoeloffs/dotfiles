@@ -1,6 +1,5 @@
 key_bindings:
-  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
-
+  - {key: Return, mods: Control|Shift, action: SpawnNewInstance}
 font:
   size: 13
   bold:
@@ -17,32 +16,33 @@ font:
   offset:
     x: 0
     y: 0
-
+window:
+  opacity: 1
+  padding:
+    x: 5
+    y: 5
 colors:
   primary:
-    background: '#0d0d1b'
-    foreground: '#ccccce'
-
+    background: '#020202'
+    foreground: '#ccccfe'
   cursor:
-    text: '#bbbbbb'
-    cursor: '#ff0017'
-
+    text: '0xeee9fc'
+    cursor: '0xeee9fc'
   normal:
-    black: '#282828'
-    red: '#ca1444'
-    green: '#789aba'
-    yellow: '#b3879f'
-    blue: '#95569b'
-    magenta: '#cb6fa1'
-    cyan: '#fb6e93'
-    white: '#cf98c1'
-
+    black: '#100010'
+    red: '#e965a5'
+    green: '#b1f2a7'
+    yellow: '#ebde76'
+    blue: '#a1aaf4'
+    magenta: '#e192ef'
+    cyan: '#b3f4f3'
+    white: '#eee9fc'
   bright:
-    black: '#98218e'
-    red: '#cb515d'
-    green: '#5a87b1'
-    yellow: '#9c61ab'
-    blue: '#9a77b1'
-    magenta: '#f2a297'
-    cyan: '#f4436f'
-    white: '#ebdbb2'
+    black: '#6c3067'
+    red: '#ca4474'
+    green: '#74d672'
+    yellow: '#f1ca4d'
+    blue: '#b15aff'
+    magenta: '#c71cc9'
+    cyan: '#85e5ed'
+    white: '#cf98c1'

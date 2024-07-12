@@ -10,7 +10,9 @@ fi
 
 # Add stuff to the path for different programming languages.
 # the HOME bin should be _first_ such that it can be used to overwrite stuff
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/var/lib/flatpak/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# Flatpak
+export PATH=$PATH:/var/lib/flatpak/bin
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
 # Scala
@@ -62,7 +64,6 @@ zinit snippet OMZP::debian
 zinit snippet OMZP::pip
 zinit snippet OMZP::docker-compose
 zinit snippet OMZP::python
-zinit snippet OMZP::rust
 zinit snippet OMZP::sbt
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx

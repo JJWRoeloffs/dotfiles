@@ -17,6 +17,9 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.local/share/coursier/bin
 # Go
 export PATH=$PATH:/usr/local/go/bin
+# Haskell
+export GHCUP_USE_XDG_DIRS=1
+source ~/.local/share/ghcup/env
 
 # Basic settings
 HYPHEN_INSENSITIVE="true"

@@ -1,0 +1,11 @@
+configuration {
+  sidebar-mode:  true;
+  hide-scrollbar: true;
+  kb-cancel: "Escape";
+  kb-mode-next: "Shift+Right";
+  kb-mode-previous: "Shift+Left";
+  modi: "combi,drun,window,ssh";
+  combi-modi: "window,drun";
+  show: "combi";
+}
+@theme "squared-material"

@@ -1,0 +1,43 @@
+! ██╗░░██╗██████╗░███████╗███████╗░██████╗░██╗░░░██╗██████╗░░██████╗███████╗███████╗
+! ╚██╗██╔╝██╔══██╗██╔════╝██╔════╝██╔═══██╗██║░░░██║██╔══██╗██╔════╝██╔════╝██╔════╝
+! ░╚███╔╝░██████╔╝█████╗░░███████╗██║░░░██║██║░░░██║██████╔╝██║░░░░░█████╗░░███████╗
+! ░██╔██╗░██╔══██╗██╔══╝░░╚════██║██║░░░██║██║░░░██║██╔══██╗██║░░░░░██╔══╝░░╚════██║
+! ██╔╝░██╗██║░░██║███████╗███████║╚██████╔╝╚██████╔╝██║░░██║╚██████╗███████╗███████║
+! ╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝╚══════╝╚══════╝
+!
+! -----------------------------------
+Xft.dpi: 163
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+
+xcursor.theme:            Vanilla-DMZ
+xscreensaver.fade:   false
+xscreensaver.unfade: false
+! ===== urxvt =====
+URxvt.scrollBar: off
+URxvt.font: xft:monospace:size=12
+URxvt.internalBorder:     22
+! =================
+*background:	#020202
+*foreground:	#CCCCFE
+*cursorColor:	#EEE9FC
+*color0:	#C574DD
+*color1:	#E965A5
+*color2:	#B1F2A7
+*color3:	#EBDE76
+*color4:	#A1AAF4
+*color5:	#E192EF
+*color6:	#B3F4F3
+*color7:	#EEE9FC
+*color8:	#6C3067
+*color9:	#CA4474
+*color10:	#74D672
+*color11:	#F1CA4D
+*color12:	#B15AFF
+*color13:	#C71CC9
+*color14:	#85E5ED
+*color15:	#CF98C1

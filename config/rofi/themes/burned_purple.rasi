@@ -8,11 +8,11 @@
     font:   "FiraCode Nerd Font Medium 24";
 
     bg0:     #100010;
-    bg1:     #6c3067;
-    fg0:     #e965a5;
+    bg1:     #6C3067;
+    fg0:     #E965A5;
 
-    accent-color:     #ccccfe;
-    urgent-color:     #ffffff;
+    accent-color:     #CCCCFE;
+    urgent-color:     #FFFFFF;
 
     background-color:   transparent;
     text-color:         @fg0;

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=awesome
+Comment=awesome window manager
+TryExec=/usr/local/bin/awesome
+Exec=/usr/local/bin/awesome
+Type=Application

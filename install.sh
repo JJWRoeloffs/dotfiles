@@ -166,6 +166,9 @@ fi
 if [ ! -d "$HOME/.config/awesome" ]; then
     cp -r "$HOME/Code/dotfiles/config/awesome/" "$HOME/.config/awesome/"
 fi
+if [ ! -f "$HOME/.Xresources" ]; then
+    cp "$HOME/Code/dotfiles/.Xresources" "$HOME"
+fi
 cp -r "$HOME/Code/dotfiles/misc/bin/" "$HOME/.local/bin"
 xrdb -merge "$HOME/Code/dotfiles/misc/colours/burned_purple"
 feh --bg-fill "$HOME/Code/dotfiles/.assets/black-cat.jpg"

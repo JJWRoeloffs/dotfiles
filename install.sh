@@ -14,7 +14,6 @@ sudo apt-get install -y build-essential fakeroot devscripts ca-certificates \
     default-jdk default-jre \
     r-base r-base-dev \
     nodejs npm \
-    lua5.4 liblua-dev liblua5.4-dev \
     texlive-full pandoc
 
 # github cli
@@ -39,14 +38,14 @@ if ! type -p rustup >/dev/null; then
     bash "$HOME/Downloads/rustupinst.sh" -y
 fi
 "$HOME/.cargo/bin/cargo" install onefetch ripgrep stylua
-rustup component add rust-analyzer
-rustup component add rust-src
+"$HOME/.cargo/bin/rustup" component add rust-analyzer
+"$HOME/.cargo/bin/rustup" component add rust-src
 
 # Scala
 if ! type -p cs >/dev/null; then
     curl -fL https://github.com/coursier/coursier/releases/latest/download/cs-x86_64-pc-linux.gz | gzip -d >$HOME/Downloads/cs
     chmod +x "$HOME/Downloads/cs"
-    "$HOME/Downloads/cs" setup
+    yes | "$HOME/Downloads/cs" setup
 fi
 sudo apt-get install openjdk-17-jdk openjdk-17-source -y
 
@@ -81,6 +80,7 @@ fi
 sudo apt-get install flatpak plasma-discover-backend-flatpak -y
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y --user flathub com.github.tchx84.Flatseal flathub org.mozilla.firefox md.obsidian.Obsidian
+# This line only works second time, after paths are updated. Doing this manually is hard, so script is ran twice.
 xdg-settings set default-web-browser org.mozilla.firefox.desktop
 sudo apt-get purge firefox-esr -y && sudo apt autoremove -y
 
@@ -152,7 +152,7 @@ fi
 # Awesomewm
 # We build from source, as I am using the git version of awesome.
 sudo apt-get build-dep awesome -y
-sudo apt-get install -y libxcb-xfixes0-dev feh compton
+sudo apt-get install -y libxcb-xfixes0-dev feh compton asciidoctor luarocks
 if ! type -p awesome >/dev/null; then
     if [ ! -d "$HOME/Code/awesome" ]; then
         git clone https://github.com/awesomeWM/awesome.git "$HOME/Code/awesome"

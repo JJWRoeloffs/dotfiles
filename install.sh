@@ -8,13 +8,14 @@
 ### Basic dependencies
 sudo apt update -y && sudo apt upgrade -y
 sudo apt-get install -y build-essential fakeroot devscripts ca-certificates \
-    vim git ffmpeg ffmpeg-doc curl wget jq sqlite3 tar xz-utils \
+    vim git ffmpeg ffmpeg-doc curl wget jq sqlite3 tar xz-utils libsensors5 \
     python3 python3-pip python3-venv python3-dev build-essential gdb lcov pkg-config libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev libncurses5-dev libreadline-dev libsqlite3-dev libssl-dev lzma lzma-dev tk-dev uuid-dev zlib1g-dev \
     gdb gcc clang cmake ninja-build \
     default-jdk default-jre \
     r-base r-base-dev \
     nodejs npm \
-    lua5.4 liblua-dev liblua5.4-dev
+    lua5.4 liblua-dev liblua5.4-dev \
+    texlive-full pandoc
 
 # github cli
 if ! type -p gh >/dev/null; then
@@ -56,6 +57,7 @@ if ! type -p ghcup >/dev/null; then
     GHCUP_USE_XDG_DIRS=1 BOOTSTRAP_HASKELL_NONINTERACTIVE=1 bash "$HOME/Downloads/ghcupinst.sh"
     "$HOME/.local/bin/ghcup" install hls
 fi
+"$HOME/.local/bin/cabal" install ormolu
 
 # Docker
 if ! type -p docker >/dev/null; then
@@ -77,8 +79,10 @@ fi
 
 # Flatpak
 sudo apt-get install flatpak plasma-discover-backend-flatpak -y
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install -y flathub com.github.tchx84.Flatseal
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install -y --user flathub com.github.tchx84.Flatseal flathub org.mozilla.firefox md.obsidian.Obsidian
+xdg-settings set default-web-browser org.mozilla.firefox.desktop
+sudo apt-get purge firefox-esr -y && sudo apt autoremove -y
 
 ### Dotfiles
 # Many of these are repetetive, and could be done in a more generic way.

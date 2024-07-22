@@ -12,7 +12,7 @@ fi
 # the HOME bin should be _first_ such that it can be used to overwrite stuff
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # Flatpak
-export PATH=$PATH:/var/lib/flatpak/bin
+export PATH=$PATH:/var/lib/flatpak/bin:/$HOME/.local/share/flatpak/exports/bin
 # Rust
 export PATH=$PATH:$HOME/.cargo/bin
 # Scala

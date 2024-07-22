@@ -8,4 +8,4 @@ configuration {
   combi-modi: "window,drun";
   show: "combi";
 }
-@theme "squared-material"
+@theme "burned_purple"

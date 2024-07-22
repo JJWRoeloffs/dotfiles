@@ -175,3 +175,9 @@ sudo apt-get install rofi -y
 if [ ! -d "$HOME/.config/rofi" ]; then
     cp -r "$HOME/Code/dotfiles/config/rofi" "$HOME/.config/rofi"
 fi
+
+# htop
+sudo apt-get install htop -y
+if [ ! -d "$HOME/.config/htop" ]; then
+    cp -r "$HOME/Code/dotfiles/config/htop" "$HOME/.config/htop"
+fi

@@ -49,6 +49,14 @@ if ! type -p cs >/dev/null; then
 fi
 sudo apt-get install openjdk-17-jdk openjdk-17-source -y
 
+# Pyenv
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+    libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+    xz-utils tk-dev libffi-dev liblzma-dev
+if ! type -p pyenv >/dev/null; then
+    curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+fi
+
 # Haskell
 sudo apt-get install build-essential curl libffi-dev libgmp10 libncurses5 libtinfo5 libicu-dev libncurses-dev libgmp-dev zlib1g-dev -y
 if ! type -p ghcup >/dev/null; then

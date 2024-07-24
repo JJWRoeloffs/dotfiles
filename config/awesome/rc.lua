@@ -1129,7 +1129,7 @@ end)
 --     awful.spawn(autorunApps[app])
 -- end
 awful.util.spawn("compton")
--- awful.util.spawn("redshift")
+awful.util.spawn("redshift")
 
 -- Garbage collection
 -- Enable for lower memory consumption

@@ -177,7 +177,7 @@ fi
 if [ ! -f "$HOME/.Xresources" ]; then
     cp "$HOME/Code/dotfiles/.Xresources" "$HOME"
 fi
-cp -r "$HOME/Code/dotfiles/misc/bin/" "$HOME/.local/bin"
+cp -r "$HOME/Code/dotfiles/misc/bin/." "$HOME/.local/bin"
 xrdb -merge "$HOME/Code/dotfiles/misc/colours/burned_purple"
 feh --bg-fill "$HOME/Code/dotfiles/.assets/black-cat.jpg"
 

@@ -192,13 +192,13 @@ theme.dashboard_bg = x.color0 .. "CC"
 theme.dashboard_fg = x.color7
 
 -- Exit screen
-theme.exit_screen_bg = x.color0 .. "CC"
-theme.exit_screen_fg = x.color7
+theme.exit_screen_bg = x.color8 .. "CC"
+theme.exit_screen_fg = x.color8
 theme.exit_screen_font = "sans 20"
 theme.exit_screen_icon_size = dpi(180)
 
 -- Lock screen
-theme.lock_screen_bg = x.color0 .. "CC"
+theme.lock_screen_bg = x.color8 .. "FF"
 theme.lock_screen_fg = x.color7
 
 -- Icon taglist

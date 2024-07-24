@@ -204,9 +204,9 @@ keys.globalkeys = gears.table.join(
         { description = "edit most recent screenshot with gimp", group = "screenshots" }
     ),
     -- Toggle tray visibility
-    awful.key({ superkey }, "=", function()
-        tray_toggle()
-    end, { description = "toggle tray visibility", group = "custom" }),
+    -- awful.key({ superkey }, "=", function()
+    --     tray_toggle()
+    -- end, { description = "toggle tray visibility", group = "custom" }),
 
     -- Max layout
     -- Single tap: Set max layout

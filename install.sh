@@ -149,7 +149,7 @@ fi
 sudo apt-get build-dep neovim -y
 sudo apt-get install wl-clipboard xclip -y
 if [ ! -f "$HOME/.local/bin/nvim" ]; then
-    wget -P "$HOME/.local/bin" https://github.com/neovim/neovim/releases/download/v0.10.0/nvim.appimage
+    wget -P "$HOME/.local/bin" https://github.com/neovim/neovim/releases/download/v0.10.1/nvim.appimage
     mv "$HOME/.local/bin/nvim.appimage" "$HOME/.local/bin/nvim"
     chmod u+x "$HOME/.local/bin/nvim"
 fi

@@ -1,0 +1,42 @@
+" Requires the ideavim and fuzzier Intelij plugins
+" Settings (CTRL ALT S), Plugins
+
+let mapleader = " "
+
+nnoremap i zzi
+nnoremap I zzI
+nnoremap a zza
+nnoremap A zzA
+nnoremap o zzo
+nnoremap O zzo
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+nnoremap <C-c> <CMD>noh<CR>
+
+set relativenumber
+set ignorecase
+set smartcase
+set scrolloff=8
+set sidescrolloff=5
+set incsearch
+set showmode
+set showmatch
+
+set highlightedyank
+set commentary
+
+nmap gd <Action>(GotoDeclaration)
+nmap <Leader>gt <Action>(GotoTypeDeclaration)
+nmap gr <Action>(FindUsages)
+nmap rn <Action>(RenameElement)
+nmap <S-Space> <Action>(GotoNextError)
+map <leader>o <Action>(FileStructurePopup)
+
+" I need a telescope equivilant. I cannot go back.
+map <Leader>f <action>(com.mituuz.fuzzier.Fuzzier)
+map <Leader>k <action>(com.mituuz.fuzzier.FuzzierVCS)
+map <Leader>gr <action>(com.mituuz.fuzzier.FuzzyGrep)
